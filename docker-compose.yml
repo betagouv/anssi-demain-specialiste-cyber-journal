@@ -13,7 +13,7 @@ services:
 
 
   node:
-    image: docker.io/node:24
+    image: docker.io/node:${NODE_VERSION:-latest}
     volumes:
       - ./:/home/node/app
     working_dir: /home/node/app
